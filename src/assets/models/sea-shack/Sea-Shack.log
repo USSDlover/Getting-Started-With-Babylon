@@ -1,0 +1,1629 @@
+Exporter version: 2.80.1, Blender version: 2.92.0
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used :
+		Inline textures     :  false
+		Material Type       :  PBR
+		Positions Precision :  4
+		Normals Precision   :  3
+		UVs Precision       :  3
+		Vert Color Precision:  3
+		Mat Weight Precision:  2
+		Keep Z-up r-handed  :  no
+		Texture directory   :  A:\Projects\Personal Projects\Blender\Sea Shack\
+			processing texture venice_sunset
+	Python World class constructor completed
+	processing begun of mesh:  Plane.017
+		processing begun of material:  Water
+		num positions      :  736
+		num normals        :  736
+		num tangents       :  0
+		num uvs            :  1472
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  1386
+	processing begun of node:  Empty
+	WARNING: The following object (type - CURVE) is not currently exportable thus ignored: BezierCircle
+	WARNING: The following object (type - CURVE) is not currently exportable thus ignored: BezierCircle.001
+	processing begun of camera (UniversalCamera):  Camera
+	processing begun of mesh:  Sand
+		processing begun of material:  Material.001
+		num positions      :  1709
+		num normals        :  1709
+		num tangents       :  0
+		num uvs            :  3418
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2668
+	processing begun of mesh:  Rock
+		processing begun of material:  Rock 01
+		num positions      :  1463
+		num normals        :  1463
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  488
+	processing begun of mesh:  Icosphere
+		processing begun of material:  Rock 01
+		registered as also a user of material:  Rock 01
+		num positions      :  618
+		num normals        :  618
+		num tangents       :  0
+		num uvs            :  1236
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  206
+	processing begun of mesh:  Icosphere.001
+		processing begun of material:  Rock 01
+		registered as also a user of material:  Rock 01
+		num positions      :  618
+		num normals        :  618
+		num tangents       :  0
+		num uvs            :  1236
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  206
+	processing begun of mesh:  Icosphere.002
+		processing begun of material:  Rock 01
+		registered as also a user of material:  Rock 01
+		num positions      :  618
+		num normals        :  618
+		num tangents       :  0
+		num uvs            :  1236
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  206
+	processing begun of mesh:  Icosphere.003
+		processing begun of material:  Rock 03
+		num positions      :  618
+		num normals        :  618
+		num tangents       :  0
+		num uvs            :  1236
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  206
+	processing begun of mesh:  Icosphere.004
+		processing begun of material:  Rock 02
+		num positions      :  618
+		num normals        :  618
+		num tangents       :  0
+		num uvs            :  1236
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  206
+	processing begun of mesh:  Icosphere.005
+		processing begun of material:  Rock 02
+		registered as also a user of material:  Rock 02
+		num positions      :  618
+		num normals        :  618
+		num tangents       :  0
+		num uvs            :  1236
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  206
+	processing begun of mesh:  Icosphere.006
+		processing begun of material:  Rock 03
+		registered as also a user of material:  Rock 03
+		num positions      :  618
+		num normals        :  618
+		num tangents       :  0
+		num uvs            :  1236
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  206
+	processing begun of mesh:  Icosphere.007
+		processing begun of material:  Rock 02
+		registered as also a user of material:  Rock 02
+		num positions      :  618
+		num normals        :  618
+		num tangents       :  0
+		num uvs            :  1236
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  206
+	processing begun of mesh:  Icosphere.008
+		processing begun of material:  Rock 03
+		registered as also a user of material:  Rock 03
+		num positions      :  618
+		num normals        :  618
+		num tangents       :  0
+		num uvs            :  1236
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  206
+	processing begun of mesh:  Icosphere.009
+		processing begun of material:  Rock 02
+		registered as also a user of material:  Rock 02
+		num positions      :  618
+		num normals        :  618
+		num tangents       :  0
+		num uvs            :  1236
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  206
+	processing begun of mesh:  Icosphere.010
+		processing begun of material:  Rock 02
+		registered as also a user of material:  Rock 02
+		num positions      :  618
+		num normals        :  618
+		num tangents       :  0
+		num uvs            :  1236
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  206
+	processing begun of mesh:  Icosphere.011
+		processing begun of material:  Rock 03
+		registered as also a user of material:  Rock 03
+		num positions      :  618
+		num normals        :  618
+		num tangents       :  0
+		num uvs            :  1236
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  206
+	processing begun of mesh:  Icosphere.012
+		processing begun of material:  Rock 01
+		registered as also a user of material:  Rock 01
+		num positions      :  618
+		num normals        :  618
+		num tangents       :  0
+		num uvs            :  1236
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  206
+	processing begun of mesh:  Icosphere.013
+		processing begun of material:  Rock 03
+		registered as also a user of material:  Rock 03
+		num positions      :  618
+		num normals        :  618
+		num tangents       :  0
+		num uvs            :  1236
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  206
+	processing begun of mesh:  Cube.075
+		processing begun of material:  Material.005
+		num positions      :  161
+		num normals        :  161
+		num tangents       :  0
+		num uvs            :  322
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  64
+		WARNING: # of 0 area faces found:  4
+	processing begun of mesh:  Cube.076
+		processing begun of material:  Material.003
+		num positions      :  945
+		num normals        :  945
+		num tangents       :  0
+		num uvs            :  1890
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  1452
+	processing begun of mesh:  Sphere
+		processing begun of material:  Material.004
+		num positions      :  2594
+		num normals        :  2594
+		num tangents       :  0
+		num uvs            :  5188
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  960
+	processing begun of mesh:  Cube.023
+		processing begun of material:  Material
+		num positions      :  506
+		num normals        :  506
+		num tangents       :  0
+		num uvs            :  1012
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  170
+	processing begun of mesh:  Cube.048
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  295
+		num normals        :  295
+		num tangents       :  0
+		num uvs            :  590
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.049
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  300
+		num normals        :  300
+		num tangents       :  0
+		num uvs            :  600
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.050
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  505
+		num normals        :  505
+		num tangents       :  0
+		num uvs            :  1010
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  170
+	processing begun of mesh:  Cube.051
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  300
+		num normals        :  300
+		num tangents       :  0
+		num uvs            :  600
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.052
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  504
+		num normals        :  504
+		num tangents       :  0
+		num uvs            :  1008
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  170
+	processing begun of mesh:  Cube.053
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  295
+		num normals        :  295
+		num tangents       :  0
+		num uvs            :  590
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.054
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  295
+		num normals        :  295
+		num tangents       :  0
+		num uvs            :  590
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.055
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  300
+		num normals        :  300
+		num tangents       :  0
+		num uvs            :  600
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.056
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  505
+		num normals        :  505
+		num tangents       :  0
+		num uvs            :  1010
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  170
+	processing begun of mesh:  Cube.057
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  300
+		num normals        :  300
+		num tangents       :  0
+		num uvs            :  600
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.058
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  506
+		num normals        :  506
+		num tangents       :  0
+		num uvs            :  1012
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  170
+	processing begun of mesh:  Cube.059
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  295
+		num normals        :  295
+		num tangents       :  0
+		num uvs            :  590
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.060
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  300
+		num normals        :  300
+		num tangents       :  0
+		num uvs            :  600
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.062
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  295
+		num normals        :  295
+		num tangents       :  0
+		num uvs            :  590
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.063
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  506
+		num normals        :  506
+		num tangents       :  0
+		num uvs            :  1012
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  170
+	processing begun of mesh:  Cube.064
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  505
+		num normals        :  505
+		num tangents       :  0
+		num uvs            :  1010
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  170
+	processing begun of mesh:  Cube.065
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  506
+		num normals        :  506
+		num tangents       :  0
+		num uvs            :  1012
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  170
+	processing begun of mesh:  Cube.066
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  506
+		num normals        :  506
+		num tangents       :  0
+		num uvs            :  1012
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  170
+	processing begun of mesh:  Cube.067
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  295
+		num normals        :  295
+		num tangents       :  0
+		num uvs            :  590
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.068
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  506
+		num normals        :  506
+		num tangents       :  0
+		num uvs            :  1012
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  170
+	processing begun of mesh:  Cube.069
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  295
+		num normals        :  295
+		num tangents       :  0
+		num uvs            :  590
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.070
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  506
+		num normals        :  506
+		num tangents       :  0
+		num uvs            :  1012
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  170
+	processing begun of mesh:  Cube.071
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  505
+		num normals        :  505
+		num tangents       :  0
+		num uvs            :  1010
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  170
+	processing begun of mesh:  Cube.072
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  505
+		num normals        :  505
+		num tangents       :  0
+		num uvs            :  1010
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  170
+	processing begun of mesh:  Cube.073
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  295
+		num normals        :  295
+		num tangents       :  0
+		num uvs            :  590
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.074
+		processing begun of material:  Wood 03
+		num positions      :  295
+		num normals        :  295
+		num tangents       :  0
+		num uvs            :  590
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cylinder.012
+		processing begun of material:  Wood 01
+		num positions      :  61
+		num normals        :  61
+		num tangents       :  0
+		num uvs            :  122
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  24
+	processing begun of mesh:  Cylinder.014
+		processing begun of material:  Wood 01
+		registered as also a user of material:  Wood 01
+		num positions      :  61
+		num normals        :  61
+		num tangents       :  0
+		num uvs            :  122
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  24
+	processing begun of mesh:  Plane
+		processing begun of material:  Material.005
+		registered as also a user of material:  Material.005
+		num positions      :  1689
+		num normals        :  1689
+		num tangents       :  0
+		num uvs            :  3378
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  564
+	processing begun of mesh:  Plane.001
+		processing begun of material:  Rock 03
+		registered as also a user of material:  Rock 03
+		num positions      :  103
+		num normals        :  103
+		num tangents       :  0
+		num uvs            :  206
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  36
+	processing begun of mesh:  Cylinder.004
+		processing begun of material:  Wood 04
+		num positions      :  204
+		num normals        :  204
+		num tangents       :  0
+		num uvs            :  408
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  68
+	processing begun of mesh:  Cylinder.007
+		processing begun of material:  Wood 04
+		registered as also a user of material:  Wood 04
+		num positions      :  204
+		num normals        :  204
+		num tangents       :  0
+		num uvs            :  408
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  68
+	processing begun of mesh:  Cylinder.008
+		processing begun of material:  Wood 04
+		registered as also a user of material:  Wood 04
+		num positions      :  204
+		num normals        :  204
+		num tangents       :  0
+		num uvs            :  408
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  68
+	processing begun of mesh:  Cylinder.009
+		processing begun of material:  Wood 04
+		registered as also a user of material:  Wood 04
+		num positions      :  204
+		num normals        :  204
+		num tangents       :  0
+		num uvs            :  408
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  68
+	processing begun of mesh:  Cylinder.010
+		processing begun of material:  Wood 04
+		registered as also a user of material:  Wood 04
+		num positions      :  204
+		num normals        :  204
+		num tangents       :  0
+		num uvs            :  408
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  68
+	processing begun of mesh:  Cylinder.011
+		processing begun of material:  Wood 04
+		registered as also a user of material:  Wood 04
+		num positions      :  204
+		num normals        :  204
+		num tangents       :  0
+		num uvs            :  408
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  68
+	processing begun of mesh:  Cylinder.013
+		processing begun of material:  Wood 04
+		registered as also a user of material:  Wood 04
+		num positions      :  204
+		num normals        :  204
+		num tangents       :  0
+		num uvs            :  408
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  68
+	processing begun of mesh:  Cylinder.006
+		processing begun of material:  Wood 04
+		registered as also a user of material:  Wood 04
+		num positions      :  204
+		num normals        :  204
+		num tangents       :  0
+		num uvs            :  408
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  68
+	processing begun of mesh:  Cube
+		processing begun of material:  Wood 01
+		registered as also a user of material:  Wood 01
+		num positions      :  509
+		num normals        :  509
+		num tangents       :  0
+		num uvs            :  1018
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  170
+	processing begun of mesh:  Cube.001
+		processing begun of material:  Wood 01
+		registered as also a user of material:  Wood 01
+		num positions      :  295
+		num normals        :  295
+		num tangents       :  0
+		num uvs            :  590
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.002
+		processing begun of material:  Wood 01
+		registered as also a user of material:  Wood 01
+		num positions      :  300
+		num normals        :  300
+		num tangents       :  0
+		num uvs            :  600
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.003
+		processing begun of material:  Wood 01
+		registered as also a user of material:  Wood 01
+		num positions      :  298
+		num normals        :  298
+		num tangents       :  0
+		num uvs            :  596
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.004
+		processing begun of material:  Wood 01
+		registered as also a user of material:  Wood 01
+		num positions      :  510
+		num normals        :  510
+		num tangents       :  0
+		num uvs            :  1020
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  170
+	processing begun of mesh:  Cube.005
+		processing begun of material:  Wood 01
+		registered as also a user of material:  Wood 01
+		num positions      :  505
+		num normals        :  505
+		num tangents       :  0
+		num uvs            :  1010
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  170
+	processing begun of mesh:  Cube.006
+		processing begun of material:  Wood 01
+		registered as also a user of material:  Wood 01
+		num positions      :  295
+		num normals        :  295
+		num tangents       :  0
+		num uvs            :  590
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.007
+		processing begun of material:  Wood 01
+		registered as also a user of material:  Wood 01
+		num positions      :  300
+		num normals        :  300
+		num tangents       :  0
+		num uvs            :  600
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.008
+		processing begun of material:  Wood 01
+		registered as also a user of material:  Wood 01
+		num positions      :  300
+		num normals        :  300
+		num tangents       :  0
+		num uvs            :  600
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.009
+		processing begun of material:  Wood 01
+		registered as also a user of material:  Wood 01
+		num positions      :  505
+		num normals        :  505
+		num tangents       :  0
+		num uvs            :  1010
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  170
+	processing begun of mesh:  Cube.010
+		processing begun of material:  Wood 01
+		registered as also a user of material:  Wood 01
+		num positions      :  510
+		num normals        :  510
+		num tangents       :  0
+		num uvs            :  1020
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  170
+	processing begun of mesh:  Cube.011
+		processing begun of material:  Wood 01
+		registered as also a user of material:  Wood 01
+		num positions      :  295
+		num normals        :  295
+		num tangents       :  0
+		num uvs            :  590
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.012
+		processing begun of material:  Wood 01
+		registered as also a user of material:  Wood 01
+		num positions      :  300
+		num normals        :  300
+		num tangents       :  0
+		num uvs            :  600
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.013
+		processing begun of material:  Wood 01
+		registered as also a user of material:  Wood 01
+		num positions      :  300
+		num normals        :  300
+		num tangents       :  0
+		num uvs            :  600
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.014
+		processing begun of material:  Wood 01
+		registered as also a user of material:  Wood 01
+		num positions      :  502
+		num normals        :  502
+		num tangents       :  0
+		num uvs            :  1004
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  170
+	processing begun of mesh:  Cube.025
+		processing begun of material:  Wood 03
+		registered as also a user of material:  Wood 03
+		num positions      :  338
+		num normals        :  338
+		num tangents       :  0
+		num uvs            :  676
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  116
+	processing begun of mesh:  Cube.026
+		processing begun of material:  Wood 03
+		registered as also a user of material:  Wood 03
+		num positions      :  300
+		num normals        :  300
+		num tangents       :  0
+		num uvs            :  600
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.027
+		processing begun of material:  Wood 03
+		registered as also a user of material:  Wood 03
+		num positions      :  298
+		num normals        :  298
+		num tangents       :  0
+		num uvs            :  596
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.028
+		processing begun of material:  Wood 03
+		registered as also a user of material:  Wood 03
+		num positions      :  510
+		num normals        :  510
+		num tangents       :  0
+		num uvs            :  1020
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  170
+	processing begun of mesh:  Cube.029
+		processing begun of material:  Wood 03
+		registered as also a user of material:  Wood 03
+		num positions      :  503
+		num normals        :  503
+		num tangents       :  0
+		num uvs            :  1006
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  170
+	processing begun of mesh:  Cube.030
+		processing begun of material:  Wood 03
+		registered as also a user of material:  Wood 03
+		num positions      :  295
+		num normals        :  295
+		num tangents       :  0
+		num uvs            :  590
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.033
+		processing begun of material:  Wood 03
+		registered as also a user of material:  Wood 03
+		num positions      :  506
+		num normals        :  506
+		num tangents       :  0
+		num uvs            :  1012
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  170
+	processing begun of mesh:  Cube.034
+		processing begun of material:  Wood 03
+		registered as also a user of material:  Wood 03
+		num positions      :  510
+		num normals        :  510
+		num tangents       :  0
+		num uvs            :  1020
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  170
+	processing begun of mesh:  Cube.035
+		processing begun of material:  Wood 03
+		registered as also a user of material:  Wood 03
+		num positions      :  295
+		num normals        :  295
+		num tangents       :  0
+		num uvs            :  590
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.036
+		processing begun of material:  Wood 03
+		registered as also a user of material:  Wood 03
+		num positions      :  300
+		num normals        :  300
+		num tangents       :  0
+		num uvs            :  600
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.037
+		processing begun of material:  Wood 03
+		registered as also a user of material:  Wood 03
+		num positions      :  300
+		num normals        :  300
+		num tangents       :  0
+		num uvs            :  600
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  Cube.038
+		processing begun of material:  Wood 03
+		registered as also a user of material:  Wood 03
+		num positions      :  500
+		num normals        :  500
+		num tangents       :  0
+		num uvs            :  1000
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  170
+	processing begun of mesh:  Cylinder
+		processing begun of material:  Wood 02
+		num positions      :  378
+		num normals        :  378
+		num tangents       :  0
+		num uvs            :  756
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  140
+	processing begun of mesh:  Cylinder.001
+		processing begun of material:  Wood 02
+		registered as also a user of material:  Wood 02
+		num positions      :  378
+		num normals        :  378
+		num tangents       :  0
+		num uvs            :  756
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  140
+	processing begun of mesh:  Cylinder.002
+		processing begun of material:  Wood 02
+		registered as also a user of material:  Wood 02
+		num positions      :  370
+		num normals        :  370
+		num tangents       :  0
+		num uvs            :  740
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  140
+	processing begun of mesh:  Cylinder.003
+		processing begun of material:  Wood 02
+		registered as also a user of material:  Wood 02
+		num positions      :  371
+		num normals        :  371
+		num tangents       :  0
+		num uvs            :  742
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  140
+	processing begun of mesh:  Cube.022
+		processing begun of material:  Wood 02
+		registered as also a user of material:  Wood 02
+		num positions      :  462
+		num normals        :  462
+		num tangents       :  0
+		num uvs            :  924
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  156
+	processing begun of mesh:  Cube.032
+		processing begun of material:  Wood 02
+		registered as also a user of material:  Wood 02
+		num positions      :  458
+		num normals        :  458
+		num tangents       :  0
+		num uvs            :  916
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  156
+	processing begun of mesh:  Cube.039
+		processing begun of material:  Wood 02
+		registered as also a user of material:  Wood 02
+		num positions      :  461
+		num normals        :  461
+		num tangents       :  0
+		num uvs            :  922
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  156
+	processing begun of mesh:  Cube.047
+		processing begun of material:  Wood 02
+		registered as also a user of material:  Wood 02
+		num positions      :  458
+		num normals        :  458
+		num tangents       :  0
+		num uvs            :  916
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  156
+	processing begun of mesh:  Cube.015
+		processing begun of material:  Wood 02
+		registered as also a user of material:  Wood 02
+		num positions      :  462
+		num normals        :  462
+		num tangents       :  0
+		num uvs            :  924
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  156
+	processing begun of mesh:  Cube.016
+		processing begun of material:  Wood 02
+		registered as also a user of material:  Wood 02
+		num positions      :  459
+		num normals        :  459
+		num tangents       :  0
+		num uvs            :  918
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  156
+	processing begun of mesh:  Cube.017
+		processing begun of material:  Wood 02
+		registered as also a user of material:  Wood 02
+		num positions      :  462
+		num normals        :  462
+		num tangents       :  0
+		num uvs            :  924
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  156
+	processing begun of mesh:  Cube.018
+		processing begun of material:  Wood 02
+		registered as also a user of material:  Wood 02
+		num positions      :  462
+		num normals        :  462
+		num tangents       :  0
+		num uvs            :  924
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  156
+	processing begun of mesh:  Cube.019
+		processing begun of material:  Wood 02
+		registered as also a user of material:  Wood 02
+		num positions      :  461
+		num normals        :  461
+		num tangents       :  0
+		num uvs            :  922
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  156
+	processing begun of mesh:  Cube.020
+		processing begun of material:  Wood 02
+		registered as also a user of material:  Wood 02
+		num positions      :  462
+		num normals        :  462
+		num tangents       :  0
+		num uvs            :  924
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  156
+	processing begun of mesh:  Cube.024
+		processing begun of material:  Wood 02
+		registered as also a user of material:  Wood 02
+		num positions      :  456
+		num normals        :  456
+		num tangents       :  0
+		num uvs            :  912
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  156
+	processing begun of mesh:  Cube.031
+		processing begun of material:  Wood 02
+		registered as also a user of material:  Wood 02
+		num positions      :  456
+		num normals        :  456
+		num tangents       :  0
+		num uvs            :  912
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  156
+	processing begun of mesh:  Cube.040
+		processing begun of material:  Wood 02
+		registered as also a user of material:  Wood 02
+		num positions      :  464
+		num normals        :  464
+		num tangents       :  0
+		num uvs            :  928
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  156
+	processing begun of mesh:  Cube.041
+		processing begun of material:  Wood 02
+		registered as also a user of material:  Wood 02
+		num positions      :  463
+		num normals        :  463
+		num tangents       :  0
+		num uvs            :  926
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  156
+	processing begun of mesh:  Cube.042
+		processing begun of material:  Wood 02
+		registered as also a user of material:  Wood 02
+		num positions      :  462
+		num normals        :  462
+		num tangents       :  0
+		num uvs            :  924
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  156
+	processing begun of mesh:  Cube.043
+		processing begun of material:  Wood 02
+		registered as also a user of material:  Wood 02
+		num positions      :  464
+		num normals        :  464
+		num tangents       :  0
+		num uvs            :  928
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  156
+	processing begun of mesh:  Cube.044
+		processing begun of material:  Wood 02
+		registered as also a user of material:  Wood 02
+		num positions      :  461
+		num normals        :  461
+		num tangents       :  0
+		num uvs            :  922
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  156
+	processing begun of mesh:  Cube.045
+		processing begun of material:  Wood 02
+		registered as also a user of material:  Wood 02
+		num positions      :  462
+		num normals        :  462
+		num tangents       :  0
+		num uvs            :  924
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  156
+	processing begun of mesh:  Cube.046
+		processing begun of material:  Wood 02
+		registered as also a user of material:  Wood 02
+		num positions      :  464
+		num normals        :  464
+		num tangents       :  0
+		num uvs            :  928
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  156
+	processing begun of mesh:  Cylinder.015
+		processing begun of material:  Material.009
+		processing begun of material:  Material.006
+		processing begun of multimaterial:  Sea_Shack.Multimaterial#0
+		num positions      :  811
+		num normals        :  811
+		num tangents       :  0
+		num uvs            :  1622
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  296
+	processing begun of mesh:  Cylinder.016
+		processing begun of material:  Wood 04
+		registered as also a user of material:  Wood 04
+		num positions      :  469
+		num normals        :  469
+		num tangents       :  0
+		num uvs            :  938
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  168
+		WARNING: # of 0 area faces found:  20
+	processing begun of mesh:  Plane.002
+		processing begun of material:  Material.007
+		num positions      :  48
+		num normals        :  48
+		num tangents       :  0
+		num uvs            :  96
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  16
+	processing begun of mesh:  Plane.003
+		processing begun of material:  Material.008
+		num positions      :  48
+		num normals        :  48
+		num tangents       :  0
+		num uvs            :  96
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  16
+	processing begun of mesh:  Plane.004
+		processing begun of material:  Material.007
+		registered as also a user of material:  Material.007
+		num positions      :  48
+		num normals        :  48
+		num tangents       :  0
+		num uvs            :  96
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  16
+	processing begun of mesh:  Plane.005
+		processing begun of material:  Material.007
+		registered as also a user of material:  Material.007
+		num positions      :  48
+		num normals        :  48
+		num tangents       :  0
+		num uvs            :  96
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  16
+	processing begun of mesh:  Plane.006
+		processing begun of material:  Material.007
+		registered as also a user of material:  Material.007
+		num positions      :  48
+		num normals        :  48
+		num tangents       :  0
+		num uvs            :  96
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  16
+	processing begun of mesh:  Plane.007
+		processing begun of material:  Material.008
+		registered as also a user of material:  Material.008
+		num positions      :  48
+		num normals        :  48
+		num tangents       :  0
+		num uvs            :  96
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  16
+	processing begun of mesh:  Plane.008
+		processing begun of material:  Material.007
+		registered as also a user of material:  Material.007
+		num positions      :  47
+		num normals        :  47
+		num tangents       :  0
+		num uvs            :  94
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  16
+	processing begun of mesh:  Plane.009
+		processing begun of material:  Material.008
+		registered as also a user of material:  Material.008
+		num positions      :  48
+		num normals        :  48
+		num tangents       :  0
+		num uvs            :  96
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  16
+	processing begun of mesh:  Plane.010
+		processing begun of material:  Material.007
+		registered as also a user of material:  Material.007
+		num positions      :  48
+		num normals        :  48
+		num tangents       :  0
+		num uvs            :  96
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  16
+	processing begun of mesh:  Plane.011
+		processing begun of material:  Material.007
+		registered as also a user of material:  Material.007
+		num positions      :  48
+		num normals        :  48
+		num tangents       :  0
+		num uvs            :  96
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  16
+	processing begun of mesh:  Plane.012
+		processing begun of material:  Material.008
+		registered as also a user of material:  Material.008
+		num positions      :  48
+		num normals        :  48
+		num tangents       :  0
+		num uvs            :  96
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  16
+	processing begun of mesh:  Plane.013
+		processing begun of material:  Material.007
+		registered as also a user of material:  Material.007
+		num positions      :  48
+		num normals        :  48
+		num tangents       :  0
+		num uvs            :  96
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  16
+	processing begun of mesh:  Plane.014
+		processing begun of material:  Material.008
+		registered as also a user of material:  Material.008
+		num positions      :  48
+		num normals        :  48
+		num tangents       :  0
+		num uvs            :  96
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  16
+	processing begun of mesh:  Plane.015
+		processing begun of material:  Material.007
+		registered as also a user of material:  Material.007
+		num positions      :  48
+		num normals        :  48
+		num tangents       :  0
+		num uvs            :  96
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  16
+	processing begun of mesh:  Cube.021
+		processing begun of material:  Material.001
+		processing begun of material:  Material.005
+		registered as also a user of material:  Material.001
+		registered as also a user of material:  Material.005
+		processing begun of multimaterial:  Sea_Shack.Multimaterial#1
+		num positions      :  367
+		num normals        :  367
+		num tangents       :  0
+		num uvs            :  734
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  152
+	processing begun of mesh:  Cylinder.021
+		WARNING: No materials have been assigned: 
+		num positions      :  147
+		num normals        :  147
+		num tangents       :  0
+		num uvs            :  294
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  60
+	processing begun of mesh:  Cylinder.005
+		processing begun of material:  Wood 03
+		registered as also a user of material:  Wood 03
+		num positions      :  89
+		num normals        :  89
+		num tangents       :  0
+		num uvs            :  178
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  36
+	processing begun of mesh:  Cylinder.017
+		processing begun of material:  Wood 03
+		registered as also a user of material:  Wood 03
+		num positions      :  89
+		num normals        :  89
+		num tangents       :  0
+		num uvs            :  178
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  36
+	processing begun of mesh:  Cylinder.018
+		processing begun of material:  Wood 03
+		registered as also a user of material:  Wood 03
+		num positions      :  93
+		num normals        :  93
+		num tangents       :  0
+		num uvs            :  186
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  36
+	processing begun of mesh:  Cylinder.019
+		processing begun of material:  Wood 03
+		registered as also a user of material:  Wood 03
+		num positions      :  93
+		num normals        :  93
+		num tangents       :  0
+		num uvs            :  186
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  36
+	processing begun of mesh:  Cylinder.020
+		processing begun of material:  Wood 03
+		registered as also a user of material:  Wood 03
+		num positions      :  93
+		num normals        :  93
+		num tangents       :  0
+		num uvs            :  186
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  36
+	processing begun of mesh:  Cylinder.022
+		processing begun of material:  Wood 02
+		registered as also a user of material:  Wood 02
+		num positions      :  89
+		num normals        :  89
+		num tangents       :  0
+		num uvs            :  178
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  36
+	processing begun of mesh:  Cube.061
+		processing begun of material:  Wood 01
+		registered as also a user of material:  Wood 01
+		num positions      :  122
+		num normals        :  122
+		num tangents       :  0
+		num uvs            :  244
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  44
+	processing begun of mesh:  Cube.077
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  81
+		num normals        :  81
+		num tangents       :  0
+		num uvs            :  162
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  36
+	processing begun of mesh:  Cube.078
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  81
+		num normals        :  81
+		num tangents       :  0
+		num uvs            :  162
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  36
+	processing begun of mesh:  Cube.079
+		processing begun of material:  Wood 03
+		registered as also a user of material:  Wood 03
+		num positions      :  81
+		num normals        :  81
+		num tangents       :  0
+		num uvs            :  162
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  36
+	processing begun of mesh:  Cube.080
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  81
+		num normals        :  81
+		num tangents       :  0
+		num uvs            :  162
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  36
+	processing begun of mesh:  Stick
+		processing begun of material:  Rock 02
+		registered as also a user of material:  Rock 02
+		num positions      :  86
+		num normals        :  86
+		num tangents       :  0
+		num uvs            :  172
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  36
+	processing begun of mesh:  Support
+		processing begun of material:  Material.001
+		registered as also a user of material:  Material.001
+		num positions      :  94
+		num normals        :  94
+		num tangents       :  0
+		num uvs            :  188
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  36
+	WARNING: The following object (type - CURVE) is not currently exportable thus ignored: NurbsPath
+	WARNING: The following object (type - CURVE) is not currently exportable thus ignored: BezierCurve
+	processing begun of mesh:  Cylinder.023
+		processing begun of material:  Material.005
+		registered as also a user of material:  Material.005
+		num positions      :  86
+		num normals        :  86
+		num tangents       :  0
+		num uvs            :  172
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  36
+	processing begun of mesh:  Plane.016
+		processing begun of material:  Material.006
+		processing begun of material:  Material.004
+		registered as also a user of material:  Material.006
+		registered as also a user of material:  Material.004
+		processing begun of multimaterial:  Sea_Shack.Multimaterial#2
+		num positions      :  71
+		num normals        :  71
+		num tangents       :  0
+		num uvs            :  142
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  24
+	processing begun of camera (UniversalCamera):  Camera.001
+	processing begun of mesh:  Banafshe Body
+		processing begun of material:  Material.009
+		registered as also a user of material:  Material.009
+		num positions      :  121759
+		num normals        :  121759
+		num tangents       :  0
+		num uvs            :  243518
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  40876
+	WARNING: The following object (type - CURVE) is not currently exportable thus ignored: BezierCurve.001
+	processing begun of mesh:  Sphere.001
+		WARNING: No materials have been assigned: 
+		num positions      :  2584
+		num normals        :  2584
+		num tangents       :  0
+		num uvs            :  5168
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  960
+	processing begun of mesh:  Sphere.002
+		mesh is an instance of :  Sphere.001.  Processing halted.
+	processing begun of mesh:  Sphere.003
+		processing begun of material:  Material.009
+		registered as also a user of material:  Material.009
+		num positions      :  2584
+		num normals        :  2584
+		num tangents       :  0
+		num uvs            :  5168
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  960
+	processing begun of mesh:  Sphere.004
+		processing begun of material:  Material.009
+		registered as also a user of material:  Material.009
+		num positions      :  2584
+		num normals        :  2584
+		num tangents       :  0
+		num uvs            :  5168
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  960
+	processing begun of light (DIRECTIONAL):  Sun
+	processing begun of light (DIRECTIONAL):  Sun.001
+	processing begun of light (DIRECTIONAL):  Sun.002
+========= Writing of JSON file started =========
+	writing mesh:  Plane.017
+	writing mesh:  Sand
+	writing mesh:  Rock
+	writing mesh:  Icosphere
+	writing mesh:  Icosphere.001
+	writing mesh:  Icosphere.002
+	writing mesh:  Icosphere.003
+	writing mesh:  Icosphere.004
+	writing mesh:  Icosphere.005
+	writing mesh:  Icosphere.006
+	writing mesh:  Icosphere.007
+	writing mesh:  Icosphere.008
+	writing mesh:  Icosphere.009
+	writing mesh:  Icosphere.010
+	writing mesh:  Icosphere.011
+	writing mesh:  Icosphere.012
+	writing mesh:  Icosphere.013
+	writing mesh:  Cube.075
+	writing mesh:  Cube.076
+	writing mesh:  Sphere
+	writing mesh:  Cube.023
+	writing mesh:  Cube.048
+	writing mesh:  Cube.049
+	writing mesh:  Cube.050
+	writing mesh:  Cube.051
+	writing mesh:  Cube.052
+	writing mesh:  Cube.053
+	writing mesh:  Cube.054
+	writing mesh:  Cube.055
+	writing mesh:  Cube.056
+	writing mesh:  Cube.057
+	writing mesh:  Cube.058
+	writing mesh:  Cube.059
+	writing mesh:  Cube.060
+	writing mesh:  Cube.062
+	writing mesh:  Cube.063
+	writing mesh:  Cube.064
+	writing mesh:  Cube.065
+	writing mesh:  Cube.066
+	writing mesh:  Cube.067
+	writing mesh:  Cube.068
+	writing mesh:  Cube.069
+	writing mesh:  Cube.070
+	writing mesh:  Cube.071
+	writing mesh:  Cube.072
+	writing mesh:  Cube.073
+	writing mesh:  Cube.074
+	writing mesh:  Cylinder.012
+	writing mesh:  Cylinder.014
+	writing mesh:  Plane
+	writing mesh:  Plane.001
+	writing mesh:  Cylinder.004
+	writing mesh:  Cylinder.007
+	writing mesh:  Cylinder.008
+	writing mesh:  Cylinder.009
+	writing mesh:  Cylinder.010
+	writing mesh:  Cylinder.011
+	writing mesh:  Cylinder.013
+	writing mesh:  Cylinder.006
+	writing mesh:  Cube
+	writing mesh:  Cube.001
+	writing mesh:  Cube.002
+	writing mesh:  Cube.003
+	writing mesh:  Cube.004
+	writing mesh:  Cube.005
+	writing mesh:  Cube.006
+	writing mesh:  Cube.007
+	writing mesh:  Cube.008
+	writing mesh:  Cube.009
+	writing mesh:  Cube.010
+	writing mesh:  Cube.011
+	writing mesh:  Cube.012
+	writing mesh:  Cube.013
+	writing mesh:  Cube.014
+	writing mesh:  Cube.025
+	writing mesh:  Cube.026
+	writing mesh:  Cube.027
+	writing mesh:  Cube.028
+	writing mesh:  Cube.029
+	writing mesh:  Cube.030
+	writing mesh:  Cube.033
+	writing mesh:  Cube.034
+	writing mesh:  Cube.035
+	writing mesh:  Cube.036
+	writing mesh:  Cube.037
+	writing mesh:  Cube.038
+	writing mesh:  Cylinder
+	writing mesh:  Cylinder.001
+	writing mesh:  Cylinder.002
+	writing mesh:  Cylinder.003
+	writing mesh:  Cube.022
+	writing mesh:  Cube.032
+	writing mesh:  Cube.039
+	writing mesh:  Cube.047
+	writing mesh:  Cube.015
+	writing mesh:  Cube.016
+	writing mesh:  Cube.017
+	writing mesh:  Cube.018
+	writing mesh:  Cube.019
+	writing mesh:  Cube.020
+	writing mesh:  Cube.024
+	writing mesh:  Cube.031
+	writing mesh:  Cube.040
+	writing mesh:  Cube.041
+	writing mesh:  Cube.042
+	writing mesh:  Cube.043
+	writing mesh:  Cube.044
+	writing mesh:  Cube.045
+	writing mesh:  Cube.046
+	writing mesh:  Cylinder.015
+	writing mesh:  Cylinder.016
+	writing mesh:  Plane.002
+	writing mesh:  Plane.003
+	writing mesh:  Plane.004
+	writing mesh:  Plane.005
+	writing mesh:  Plane.006
+	writing mesh:  Plane.007
+	writing mesh:  Plane.008
+	writing mesh:  Plane.009
+	writing mesh:  Plane.010
+	writing mesh:  Plane.011
+	writing mesh:  Plane.012
+	writing mesh:  Plane.013
+	writing mesh:  Plane.014
+	writing mesh:  Plane.015
+	writing mesh:  Cube.021
+	writing mesh:  Cylinder.021
+	writing mesh:  Cylinder.005
+	writing mesh:  Cylinder.017
+	writing mesh:  Cylinder.018
+	writing mesh:  Cylinder.019
+	writing mesh:  Cylinder.020
+	writing mesh:  Cylinder.022
+	writing mesh:  Cube.061
+	writing mesh:  Cube.077
+	writing mesh:  Cube.078
+	writing mesh:  Cube.079
+	writing mesh:  Cube.080
+	writing mesh:  Stick
+	writing mesh:  Support
+	writing mesh:  Cylinder.023
+	writing mesh:  Plane.016
+	writing mesh:  Banafshe Body
+	writing mesh:  Sphere.001
+	writing mesh:  Sphere.003
+	writing mesh:  Sphere.004
+========= Writing of JSON file completed =========
+========= end of processing =========
+elapsed time:  0 min, 8.3125 secs
