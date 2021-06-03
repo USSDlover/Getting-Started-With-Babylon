@@ -1,11 +1,10 @@
-// import {BoxScene} from "./scenes/box-scene";
-// import {FirstSceneAndModel} from "./getting-started/first-scene-and-model";
-
-import {ImportSceneModel} from "./getting-started/chapter-one/import-scene-model";
+import {Village} from "./getting-started/chapter-two/village";
+import {VillageSandbox} from "./getting-started/chapter-two/village.sandbox";
+import {VillageBabylonGlb} from "./getting-started/chapter-two/village.babylon-glb";
 
 class App {
     constructor() {
-        const activeScene = new ImportSceneModel();
+        const activeScene = new VillageBabylonGlb();
     }
 }
 
