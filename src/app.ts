@@ -5,10 +5,4 @@
 // import {TheDude} from "./getting-started/chapter-three/the-dude";
 import {SphereThatFollowPath} from "./getting-started/chapter-three/sphere-that-follow-path";
 
-class App {
-    constructor() {
-        const activeScene = new SphereThatFollowPath();
-    }
-}
-
-new App();
+new SphereThatFollowPath();
