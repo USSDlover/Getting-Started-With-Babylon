@@ -3,6 +3,7 @@
 // import {VillageBabylonGlb} from "./getting-started/chapter-two/village.babylon-glb";
 // import {TheCar} from "./getting-started/chapter-three/the-car";
 // import {TheDude} from "./getting-started/chapter-three/the-dude";
-import {SphereThatFollowPath} from "./getting-started/chapter-three/sphere-that-follow-path";
+// import {SphereThatFollowPath} from "./getting-started/chapter-three/sphere-that-follow-path";
+import {DudeWalkingInTheVillage} from "./getting-started/chapter-three/dude-walking-in-the-village";
 
-new SphereThatFollowPath();
+new DudeWalkingInTheVillage();
