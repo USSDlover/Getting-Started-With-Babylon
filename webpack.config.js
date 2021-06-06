@@ -30,6 +30,9 @@ module.exports = {
             patterns: [
                 { from: 'src/assets', to: 'assets' }
             ]
+        }),
+        new webpack.ProvidePlugin({
+            'earcut': 'earcut'
         })
     ],
     mode: 'development'
