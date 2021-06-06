@@ -2,8 +2,10 @@ import {
     MeshBuilder,
     StandardMaterial,
     Texture,
+    Tools,
     Vector3,
-    Vector4
+    Vector4,
+    Animation
 } from "@babylonjs/core";
 import {IScene} from "../../interfaces/scene.interface";
 import {BasicSceneBase} from "../../base/basic-scene.base";
@@ -50,6 +52,32 @@ export class TheCar extends BasicSceneBase implements IScene {
         carMat.diffuseTexture = new Texture('./assets/textures/car.png', this.scene);
         car.material = carMat;
 
+        const animCar = new Animation('CarAnimation', 'position.x', 30,
+            Animation.ANIMATIONTYPE_FLOAT, Animation.ANIMATIONLOOPMODE_CYCLE);
+
+        const carKeys = [];
+
+        carKeys.push({
+            frame: 0,
+            value: -2
+        });
+
+        carKeys.push({
+            frame: 150,
+            value: 2
+        });
+
+        carKeys.push({
+            frame: 210,
+            value: 2
+        });
+
+        animCar.setKeys(carKeys);
+
+        car.animations = [];
+        car.animations.push(animCar);
+
+        this.scene.beginAnimation(car, 0, 210, true);
 
         const wheelUV = [];
         wheelUV[0] = new Vector4(0,0,1,1);
@@ -64,10 +92,31 @@ export class TheCar extends BasicSceneBase implements IScene {
         wheelMat.diffuseTexture = new Texture('./assets/textures/wheel.png', this.scene);
         wheelRB.material = wheelMat;
 
+        const animWheel = new Animation('wheelAnimation', 'rotation.y', 30,
+            Animation.ANIMATIONTYPE_FLOAT, Animation.ANIMATIONLOOPMODE_CYCLE);
+
+        const wheelKeys = [];
+
+        wheelKeys.push({
+            frame: 0,
+            value: 0
+        });
+
+        // 30 as FPS = 30
+        wheelKeys.push({
+            frame: 30,
+            value: Tools.ToRadians(360)
+        });
+
+        animWheel.setKeys(wheelKeys);
+
         wheelRB.parent = car;
         wheelRB.position.z = -.1;
         wheelRB.position.x = -.2;
         wheelRB.position.y = .035;
+
+        wheelRB.animations = [];
+        wheelRB.animations.push(animWheel);
 
         const wheelRF = wheelRB.clone('wheelRF');
         wheelRF.position.x = .1;
@@ -77,6 +126,16 @@ export class TheCar extends BasicSceneBase implements IScene {
 
         const wheelLF = wheelRF.clone('wheelLF');
         wheelLF.position.y = -.2 - .035;
+
+        this.scene.beginAnimation(wheelRB, 0, 30, true);
+        this.scene.beginAnimation(wheelRF, 0, 30, true);
+        this.scene.beginAnimation(wheelLB, 0, 30, true);
+        this.scene.beginAnimation(wheelLF, 0, 30, true);
+
+        car.rotation.x = Tools.ToRadians(-90);
+        car.position.y += 2;
+        car.position.z -= 1.5;
+        // car.rotation.z = Tools.ToRadians(45);
 
     }
 }
