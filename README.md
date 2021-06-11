@@ -14,13 +14,13 @@ and
 
 Structure is simple
 
-- public
-- src
--- assets
--- base
--- interfaces
--- scenes
--- app.ts
+|- public <br>
+|- src <br>
+|-|- assets <br>
+|-|- base <br>
+|-|- interfaces <br>
+|-|- scenes <br>
+|-|- app.ts <br>
 
 `app.ts` is responsible to load main scene
 So all you need to load your new scene, is to create new instance of that class
