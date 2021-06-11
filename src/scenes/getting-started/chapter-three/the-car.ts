@@ -7,8 +7,8 @@ import {
     Vector4,
     Animation
 } from "@babylonjs/core";
-import {IScene} from "../../interfaces/scene.interface";
-import {BasicSceneBase} from "../../base/basic-scene.base";
+import {IScene} from "../../../interfaces/scene.interface";
+import {BasicSceneBase} from "../../../base/basic-scene.base";
 
 export class TheCar extends BasicSceneBase implements IScene {
     constructor() {

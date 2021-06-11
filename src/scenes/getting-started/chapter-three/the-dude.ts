@@ -1,4 +1,4 @@
-import {BasicSceneBase} from "../../base/basic-scene.base";
+import {BasicSceneBase} from "../../../base/basic-scene.base";
 import '@babylonjs/loaders';
 import {AbstractMesh, Animation, SceneLoader, Vector3} from "@babylonjs/core";
 

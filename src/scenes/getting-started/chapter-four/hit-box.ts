@@ -1,4 +1,4 @@
-import {BasicSceneBase} from "../../base/basic-scene.base";
+import {BasicSceneBase} from "../../../base/basic-scene.base";
 import {
     AbstractMesh,
     Animation, ArcRotateCamera,

@@ -11,8 +11,8 @@ import {ArcRotateCamera, Camera, DirectionalLight,
     SpotLight,
     Vector3
 } from "@babylonjs/core";
-import {EngineBase} from "../../base/engine.base";
-import {IScene} from "../../interfaces/scene.interface";
+import {EngineBase} from "../../../base/engine.base";
+import {IScene} from "../../../interfaces/scene.interface";
 
 export class FirstSceneAndModel extends EngineBase implements IScene {
     scene: Scene;

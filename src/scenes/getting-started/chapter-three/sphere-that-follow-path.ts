@@ -1,4 +1,4 @@
-import {BasicSceneBase} from "../../base/basic-scene.base";
+import {BasicSceneBase} from "../../../base/basic-scene.base";
 import {Axis, MeshBuilder, Space, Vector3} from "@babylonjs/core";
 
 export class SphereThatFollowPath extends BasicSceneBase {

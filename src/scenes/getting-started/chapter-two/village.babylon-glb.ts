@@ -1,5 +1,5 @@
-import {EngineBase} from "../../base/engine.base";
-import {IScene} from "../../interfaces/scene.interface";
+import {EngineBase} from "../../../base/engine.base";
+import {IScene} from "../../../interfaces/scene.interface";
 import {ArcRotateCamera, Camera, HemisphericLight, Light, Scene, SceneLoader, Vector3} from "@babylonjs/core";
 import '@babylonjs/loaders/glTF';
 

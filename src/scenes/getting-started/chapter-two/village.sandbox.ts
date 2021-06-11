@@ -1,5 +1,5 @@
-import {EngineBase} from "../../base/engine.base";
-import {IScene} from "../../interfaces/scene.interface";
+import {EngineBase} from "../../../base/engine.base";
+import {IScene} from "../../../interfaces/scene.interface";
 import {
     ArcRotateCamera,
     Camera,

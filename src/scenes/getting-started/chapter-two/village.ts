@@ -1,4 +1,4 @@
-import {IScene} from "../../interfaces/scene.interface";
+import {IScene} from "../../../interfaces/scene.interface";
 import {
     ArcRotateCamera, Color3,
     HemisphericLight,
@@ -10,7 +10,7 @@ import {
     Tools,
     Vector3, Vector4
 } from "@babylonjs/core";
-import {EngineBase} from "../../base/engine.base";
+import {EngineBase} from "../../../base/engine.base";
 
 export class Village extends EngineBase implements IScene {
     camera: ArcRotateCamera;
