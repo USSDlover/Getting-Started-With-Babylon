@@ -5,6 +5,8 @@
 // import {TheDude} from "./getting-started/chapter-three/the-dude";
 // import {SphereThatFollowPath} from "./getting-started/chapter-three/sphere-that-follow-path";
 // import {DudeWalkingInTheVillage} from "./getting-started/chapter-three/dude-walking-in-the-village";
-import {HitBox} from "./scenes/getting-started/chapter-four/hit-box";
+// import {HitBox} from "./scenes/getting-started/chapter-four/hit-box";
 
-new HitBox();
+import {TownScene} from "./scenes/trial/town.scene";
+
+new TownScene();
