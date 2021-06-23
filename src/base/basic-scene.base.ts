@@ -1,9 +1,9 @@
-import {ArcRotateCamera, Camera, HemisphericLight, Scene, Vector3} from "@babylonjs/core";
+import {ArcRotateCamera, HemisphericLight, Scene, Vector3} from "@babylonjs/core";
 import {EngineBase} from "./engine.base";
 import {IScene} from "../interfaces/scene.interface";
 
 export class BasicSceneBase extends EngineBase implements IScene {
-    camera: Camera;
+    camera: ArcRotateCamera;
     light: HemisphericLight;
     scene: Scene;
 
@@ -13,8 +13,8 @@ export class BasicSceneBase extends EngineBase implements IScene {
 
         this.camera = new ArcRotateCamera(
             'arc-camera',
-            -Math.PI / 2, Math.PI / 2.5, 5,
-            new Vector3(0, 1, 1),
+            -Math.PI / 2, Math.PI / 2, 5,
+            new Vector3(0, 0, 0),
             this.scene
         );
 
