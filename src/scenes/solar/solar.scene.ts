@@ -1,5 +1,5 @@
 import {BasicSceneBase} from '../../base/basic-scene.base';
-import {Color3, CubeTexture, MeshBuilder, StandardMaterial, Texture, Tools, Vector3} from '@babylonjs/core';
+import {Color3, CubeTexture, MeshBuilder, Sound, StandardMaterial, Texture, Tools, Vector3} from '@babylonjs/core';
 
 export class SolarScene extends BasicSceneBase {
     constructor() {
@@ -12,24 +12,42 @@ export class SolarScene extends BasicSceneBase {
         this.addMercury();
         this.addVenus();
         this.addEarth();
+        this.playSound();
     }
 
     setCameraState(): void {
         this.camera.position = new Vector3(8, 2, 0);
         this.camera.target = Vector3.Zero();
         this.camera.wheelPrecision = 300;
+
+        this.camera.lowerRadiusLimit = 10;
+        this.camera.upperRadiusLimit = 18;
+        this.camera.useAutoRotationBehavior = true;
+    }
+
+    playSound(): void {
+        const music = new Sound(
+            'glaxySound',
+            './assets/sounds/galaxy.mp3',
+            this.scene,
+            null,
+            {
+                loop: true,
+                autoplay: true
+            }
+        );
     }
 
     addSkyBox(): void {
         const skyBox = MeshBuilder.CreateBox(
             'skyBox',
-            {size: 1000.0},
+            {size: 10000.0},
             this.scene
         );
         const skyBoxMat = new StandardMaterial('skyBox', this.scene);
         skyBoxMat.backFaceCulling = false;
         skyBoxMat.reflectionTexture = new CubeTexture(
-            './assets/skyBox/galaxy/galaxy',
+            './assets/skyBox/galaxy/',
             this.scene
         );
         skyBoxMat.reflectionTexture.coordinatesMode =
