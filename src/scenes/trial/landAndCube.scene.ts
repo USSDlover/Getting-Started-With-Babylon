@@ -9,7 +9,7 @@ import {
     Vector3
 } from "@babylonjs/core";
 
-export class TownScene extends BasicSceneBase {
+export class LandAndCubeScene extends BasicSceneBase {
     pointLight: PointLight;
     box: Mesh;
 

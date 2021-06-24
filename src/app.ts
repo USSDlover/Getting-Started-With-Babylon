@@ -7,6 +7,6 @@
 // import {DudeWalkingInTheVillage} from "./getting-started/chapter-three/dude-walking-in-the-village";
 // import {HitBox} from "./scenes/getting-started/chapter-four/hit-box";
 
-import {TownScene} from "./scenes/trial/town.scene";
+import {LandAndCubeScene} from "./scenes/trial/landAndCube.scene";
 
-new TownScene();
+new LandAndCubeScene();
