@@ -6,7 +6,8 @@
 // import {SphereThatFollowPath} from './getting-started/chapter-three/sphere-that-follow-path';
 // import {DudeWalkingInTheVillage} from './getting-started/chapter-three/dude-walking-in-the-village';
 // import {HitBox} from './scenes/getting-started/chapter-four/hit-box';
+// import {LandAndCubeScene} from './scenes/trial/landAndCube.scene';
 
-import {LandAndCubeScene} from './scenes/trial/landAndCube.scene';
+import {SolarScene} from './scenes/solar/solar.scene';
 
-const app = new LandAndCubeScene();
+const app = new SolarScene();
