@@ -6,13 +6,13 @@ import {
     Vector3,
     Vector4,
     Animation
-} from "@babylonjs/core";
-import {IScene} from "../../../interfaces/scene.interface";
-import {BasicSceneBase} from "../../../base/basic-scene.base";
+} from '@babylonjs/core';
+import {IScene} from '../../../interfaces/scene.interface';
+import {BasicSceneBase} from '../../../base/basic-scene.base';
 
 export class TheCar extends BasicSceneBase implements IScene {
     constructor() {
-        super()
+        super();
         this.buildTheCar();
     }
 
@@ -33,16 +33,16 @@ export class TheCar extends BasicSceneBase implements IScene {
         }
 
         // Top
-        outline.push(new Vector3(0,0,.1));
-        outline.push(new Vector3(-.3,0,.1));
+        outline.push(new Vector3(0, 0, .1));
+        outline.push(new Vector3(-.3, 0, .1));
 
         const faceUV = [];
         // Bottom
-        faceUV[0] = new Vector4(0,.5,.38,1);
+        faceUV[0] = new Vector4(0, .5, .38, 1);
         // Top
-        faceUV[2] = new Vector4(.38,1,0,.5);
+        faceUV[2] = new Vector4(.38, 1, 0, .5);
         // Edge
-        faceUV[1] = new Vector4(0,0,1,.5);
+        faceUV[1] = new Vector4(0, 0, 1, .5);
 
         const car = MeshBuilder.ExtrudePolygon('car', {
             shape: outline, depth: .2, faceUV, wrap: true
@@ -80,9 +80,9 @@ export class TheCar extends BasicSceneBase implements IScene {
         this.scene.beginAnimation(car, 0, 210, true);
 
         const wheelUV = [];
-        wheelUV[0] = new Vector4(0,0,1,1);
-        wheelUV[1] = new Vector4(0,.5,0,.5);
-        wheelUV[2] = new Vector4(0,0,1,1);
+        wheelUV[0] = new Vector4(0, 0, 1, 1);
+        wheelUV[1] = new Vector4(0, .5, 0, .5);
+        wheelUV[2] = new Vector4(0, 0, 1, 1);
 
         const wheelRB = MeshBuilder.CreateCylinder(
             'wheelRB',

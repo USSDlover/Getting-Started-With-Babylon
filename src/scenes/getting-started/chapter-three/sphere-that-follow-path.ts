@@ -1,5 +1,5 @@
-import {BasicSceneBase} from "../../../base/basic-scene.base";
-import {Axis, MeshBuilder, Space, Vector3} from "@babylonjs/core";
+import {BasicSceneBase} from '../../../base/basic-scene.base';
+import {Axis, MeshBuilder, Space, Vector3} from '@babylonjs/core';
 
 export class SphereThatFollowPath extends BasicSceneBase {
     constructor() {
@@ -9,7 +9,7 @@ export class SphereThatFollowPath extends BasicSceneBase {
 
     action(): void {
         const sphere = MeshBuilder.CreateSphere('sphere', {diameter: .25}, this.scene);
-        sphere.position = new Vector3(2,0,2);
+        sphere.position = new Vector3(2, 0, 2);
 
         const points = [];
         points.push(new Vector3(2, 0, 2));
@@ -19,10 +19,10 @@ export class SphereThatFollowPath extends BasicSceneBase {
 
         MeshBuilder.CreateLines('triangle', {points}, this.scene);
 
-        const slide = function (turn, dist) {
+        const slide = function(turn, dist): void {
             this.turn = turn;
             this.dist = dist;
-        }
+        };
 
         const track = [];
 
@@ -34,7 +34,7 @@ export class SphereThatFollowPath extends BasicSceneBase {
         track.push(new slide(3 * Math.PI / 4, 8 + 4 * Math.sqrt(2)));
 
         let distance = 0;
-        let step = .05;
+        const step = .05;
         let p = 0;
 
         this.scene.onBeforeRenderObservable.add(() => {
@@ -53,7 +53,7 @@ export class SphereThatFollowPath extends BasicSceneBase {
                     sphere.rotation = Vector3.Zero();
                 }
             }
-        })
+        });
     }
 
 

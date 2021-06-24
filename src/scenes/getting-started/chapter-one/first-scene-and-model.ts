@@ -1,18 +1,13 @@
-import {ArcRotateCamera, Camera, DirectionalLight,
+import {
+    ArcRotateCamera, Camera,
     HemisphericLight,
-    Light,
-    LightBlock,
-    LightGizmo,
     Mesh,
     MeshBuilder,
-    PointLight,
     Scene,
-    ShadowLight,
-    SpotLight,
     Vector3
-} from "@babylonjs/core";
-import {EngineBase} from "../../../base/engine.base";
-import {IScene} from "../../../interfaces/scene.interface";
+} from '@babylonjs/core';
+import {EngineBase} from '../../../base/engine.base';
+import {IScene} from '../../../interfaces/scene.interface';
 
 export class FirstSceneAndModel extends EngineBase implements IScene {
     scene: Scene;

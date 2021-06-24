@@ -1,4 +1,4 @@
-import {BasicSceneBase} from "../../base/basic-scene.base";
+import {BasicSceneBase} from '../../base/basic-scene.base';
 import {
     Color3,
     Mesh,
@@ -7,7 +7,7 @@ import {
     StandardMaterial,
     Tools,
     Vector3
-} from "@babylonjs/core";
+} from '@babylonjs/core';
 
 export class LandAndCubeScene extends BasicSceneBase {
     pointLight: PointLight;

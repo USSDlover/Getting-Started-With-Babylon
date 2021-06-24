@@ -1,6 +1,6 @@
-import {BasicSceneBase} from "../../../base/basic-scene.base";
+import {BasicSceneBase} from '../../../base/basic-scene.base';
 import '@babylonjs/loaders';
-import {AbstractMesh, Animation, SceneLoader, Vector3} from "@babylonjs/core";
+import {AbstractMesh, SceneLoader, Vector3} from '@babylonjs/core';
 
 export class TheDude extends BasicSceneBase {
     dude: AbstractMesh;
@@ -29,6 +29,6 @@ export class TheDude extends BasicSceneBase {
     animateDude(): void {
         this.engine.runRenderLoop(() => {
             this.dude.movePOV(0, 0, 0.01);
-        })
+        });
     }
 }

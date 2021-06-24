@@ -1,11 +1,11 @@
 import {
-    Camera, FollowCamera,
+    FollowCamera,
     HemisphericLight,
     Scene, SceneLoader,
     Vector3
-} from "@babylonjs/core";
-import {EngineBase} from "../../../base/engine.base";
-import {IScene} from "../../../interfaces/scene.interface";
+} from '@babylonjs/core';
+import {EngineBase} from '../../../base/engine.base';
+import {IScene} from '../../../interfaces/scene.interface';
 
 export class ImportSceneModel extends EngineBase implements IScene {
     scene: Scene;
@@ -20,7 +20,7 @@ export class ImportSceneModel extends EngineBase implements IScene {
             'follow-camera',
             new Vector3(30, 30, 30),
             this.scene
-        )
+        );
 
 
         this.light = new HemisphericLight(
@@ -35,6 +35,7 @@ export class ImportSceneModel extends EngineBase implements IScene {
 
         this.importMesh();
     }
+
     importMesh(): void {
         SceneLoader
             .ImportMesh(
@@ -45,6 +46,6 @@ export class ImportSceneModel extends EngineBase implements IScene {
                 (abstractMeshes) => {
                     this.camera.target = abstractMeshes[0].ellipsoid;
                 }
-            )
+            );
     }
 }

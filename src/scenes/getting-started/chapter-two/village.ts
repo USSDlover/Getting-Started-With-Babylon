@@ -1,4 +1,4 @@
-import {IScene} from "../../../interfaces/scene.interface";
+import {IScene} from '../../../interfaces/scene.interface';
 import {
     ArcRotateCamera, Color3,
     HemisphericLight,
@@ -9,8 +9,8 @@ import {
     StandardMaterial, Texture,
     Tools,
     Vector3, Vector4
-} from "@babylonjs/core";
-import {EngineBase} from "../../../base/engine.base";
+} from '@babylonjs/core';
+import {EngineBase} from '../../../base/engine.base';
 
 export class Village extends EngineBase implements IScene {
     camera: ArcRotateCamera;
@@ -18,8 +18,8 @@ export class Village extends EngineBase implements IScene {
     scene: Scene;
 
     constructor() {
-        super()
-        this.scene = new Scene(this.engine)
+        super();
+        this.scene = new Scene(this.engine);
 
         this.camera = new ArcRotateCamera(
             'arc-camera',
@@ -67,7 +67,7 @@ export class Village extends EngineBase implements IScene {
         const ground = MeshBuilder
             .CreateGround(
                 'ground',
-                { width: 10, height: 10 },
+                {width: 10, height: 10},
                 this.scene
             );
         const groundMat = new StandardMaterial('groundMat', this.scene);
@@ -78,7 +78,7 @@ export class Village extends EngineBase implements IScene {
 
     addBox(): void {
         const box1 = MeshBuilder
-            .CreateBox( 'box-one', {}, this.scene);
+            .CreateBox('box-one', {}, this.scene);
         box1.scaling = new Vector3(1, 1.5, 1);
         box1.position = new Vector3(-1, 1.5, 0);
 

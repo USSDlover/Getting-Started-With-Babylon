@@ -1,6 +1,6 @@
-import {EngineBase} from "../../../base/engine.base";
-import {IScene} from "../../../interfaces/scene.interface";
-import {ArcRotateCamera, Camera, HemisphericLight, Light, Scene, SceneLoader, Vector3} from "@babylonjs/core";
+import {EngineBase} from '../../../base/engine.base';
+import {IScene} from '../../../interfaces/scene.interface';
+import {ArcRotateCamera, Camera, HemisphericLight, Light, Scene, SceneLoader, Vector3} from '@babylonjs/core';
 import '@babylonjs/loaders/glTF';
 
 export class VillageBabylonGlb extends EngineBase implements IScene {
@@ -13,7 +13,7 @@ export class VillageBabylonGlb extends EngineBase implements IScene {
         this.createScene();
     }
 
-    createScene() {
+    createScene(): void {
         this.scene = new Scene(this.engine);
 
         this.camera = new ArcRotateCamera('camera',
@@ -34,6 +34,6 @@ export class VillageBabylonGlb extends EngineBase implements IScene {
             .catch(reason => {
                 console.log(reason);
             });
-    };
+    }
 
 }

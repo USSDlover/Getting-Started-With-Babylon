@@ -1,4 +1,4 @@
-import { Engine } from "@babylonjs/core";
+import {Engine} from '@babylonjs/core';
 
 export class EngineBase {
     engine: Engine;
@@ -6,10 +6,10 @@ export class EngineBase {
 
     constructor() {
         // create the canvas html element and attach it to the webpage
-        this.canvas = document.createElement("canvas");
-        this.canvas.style.width = "100%";
-        this.canvas.style.height = "100%";
-        this.canvas.id = "gameCanvas";
+        this.canvas = document.createElement('canvas');
+        this.canvas.style.width = '100%';
+        this.canvas.style.height = '100%';
+        this.canvas.id = 'gameCanvas';
         document.body.appendChild(this.canvas);
 
         // initialize babylon scene and engine

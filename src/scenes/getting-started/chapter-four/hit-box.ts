@@ -1,4 +1,4 @@
-import {BasicSceneBase} from "../../../base/basic-scene.base";
+import {BasicSceneBase} from '../../../base/basic-scene.base';
 import {
     AbstractMesh,
     Animation, ArcRotateCamera,
@@ -11,7 +11,7 @@ import {
     StandardMaterial,
     Tools,
     Vector3
-} from "@babylonjs/core";
+} from '@babylonjs/core';
 import '@babylonjs/loaders';
 
 export class HitBox extends BasicSceneBase {
@@ -81,7 +81,7 @@ export class HitBox extends BasicSceneBase {
     }
 
     animateTheCar(): void {
-        this._animCar = new Animation('carAnimation', "position.z", 30,
+        this._animCar = new Animation('carAnimation', 'position.z', 30,
             Animation.ANIMATIONTYPE_FLOAT, Animation.ANIMATIONLOOPMODE_CYCLE);
 
         this._carKeys = [];
@@ -112,10 +112,10 @@ export class HitBox extends BasicSceneBase {
     }
 
     animateWheels(): void {
-        const wheelRB = this.scene.getMeshByName("wheelRB");
-        const wheelRF = this.scene.getMeshByName("wheelRF");
-        const wheelLB = this.scene.getMeshByName("wheelLB");
-        const wheelLF = this.scene.getMeshByName("wheelLF");
+        const wheelRB = this.scene.getMeshByName('wheelRB');
+        const wheelRF = this.scene.getMeshByName('wheelRF');
+        const wheelLB = this.scene.getMeshByName('wheelLB');
+        const wheelLF = this.scene.getMeshByName('wheelLF');
 
         this.scene.beginAnimation(wheelRB, 0, 30, true);
         this.scene.beginAnimation(wheelRF, 0, 30, true);
@@ -148,14 +148,14 @@ export class HitBox extends BasicSceneBase {
                     this.scene.beginAnimation(result.skeletons[0], 0, 100, true, 1.0);
 
                     let distance = 0;
-                    let step = .015;
+                    const step = .015;
                     let p = 0;
 
                     this.scene.onBeforeRenderObservable.add(() => {
                         if (this._carReady) {
                             if (!this._dude
                                     .getChildren()[1].intersectsMesh(this._hitBox) &&
-                                this.scene.getMeshByName("car").intersectsMesh(this._hitBox)) {
+                                this.scene.getMeshByName('car').intersectsMesh(this._hitBox)) {
                                 return;
                             }
 
@@ -166,7 +166,7 @@ export class HitBox extends BasicSceneBase {
                         if (distance > this._track[p].dist) {
 
                             this._dude.rotate(Axis.Y, Tools.ToRadians(this._track[p].turn), Space.LOCAL);
-                            p +=1;
+                            p += 1;
                             p %= this._track.length;
                             if (p === 0) {
                                 distance = 0;
@@ -175,7 +175,7 @@ export class HitBox extends BasicSceneBase {
                             }
                         }
 
-                    })
+                    });
                 } else {
                     console.log('Dude is missing', result);
                 }

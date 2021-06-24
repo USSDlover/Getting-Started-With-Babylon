@@ -7,7 +7,7 @@ import {
     LightGizmo,
     PointLight,
     Scene, ShadowLight, SpotLight
-} from "@babylonjs/core";
+} from '@babylonjs/core';
 
 type Lights = Light | HemisphericLight | LightBlock
     | LightGizmo | DirectionalLight | PointLight | SpotLight
