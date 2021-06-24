@@ -1,5 +1,5 @@
 import {BasicSceneBase} from '../../base/basic-scene.base';
-import {Color3, CubeTexture, MeshBuilder, StandardMaterial, Texture, Vector3} from '@babylonjs/core';
+import {Color3, CubeTexture, MeshBuilder, StandardMaterial, Texture, Tools, Vector3} from '@babylonjs/core';
 
 export class SolarScene extends BasicSceneBase {
     constructor() {
@@ -96,6 +96,7 @@ export class SolarScene extends BasicSceneBase {
         const earthMat = new StandardMaterial('earthMat', this.scene);
         earthMat.diffuseTexture = new Texture('./assets/textures/earth.jpg', this.scene);
         earth.material = earthMat;
+        earth.rotation.z = Tools.ToRadians(180);
 
         let num = 0;
         this.engine.runRenderLoop(() => {
