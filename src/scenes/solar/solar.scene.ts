@@ -1,27 +1,45 @@
 import {BasicSceneBase} from '../../base/basic-scene.base';
-import {Color3, CubeTexture, MeshBuilder, Sound, StandardMaterial, Texture, Tools, Vector3} from '@babylonjs/core';
+import {Mesh, Sound, Vector3} from '@babylonjs/core';
+import '@babylonjs/inspector';
+
+import {Sun} from './sun';
+import {SkyBox} from './sky-box';
+import {Mercury} from './mercury';
+import {Venus} from './venus';
+import {Earth} from './earth';
 
 export class SolarScene extends BasicSceneBase {
+    private _sun: Mesh;
+    private _skyBox: Mesh;
+    private _mercury: Mesh;
+    private _venus: Mesh;
+    private _earth: Mesh;
+
     constructor() {
         super();
+
+        // this.showDebugger();
 
         this.setCameraState();
         this.addSkyBox();
 
         this.addSun();
-        this.addMercury();
-        this.addVenus();
-        this.addEarth();
-        this.playSound();
+        // this.addMercury();
+        // this.addVenus();
+        // this.addEarth();
+        // this.playSound();
+
+    }
+
+    showDebugger(): void {
+        this.scene.debugLayer.show().then(() => {});
     }
 
     setCameraState(): void {
-        this.camera.position = new Vector3(8, 2, 0);
+        this.camera.position = new Vector3(600, 2, 0);
         this.camera.target = Vector3.Zero();
-        this.camera.wheelPrecision = 300;
+        this.camera.wheelPrecision = 100;
 
-        this.camera.lowerRadiusLimit = 10;
-        this.camera.upperRadiusLimit = 18;
         this.camera.useAutoRotationBehavior = true;
     }
 
@@ -39,88 +57,22 @@ export class SolarScene extends BasicSceneBase {
     }
 
     addSkyBox(): void {
-        const skyBox = MeshBuilder.CreateBox(
-            'skyBox',
-            {size: 10000.0},
-            this.scene
-        );
-        const skyBoxMat = new StandardMaterial('skyBox', this.scene);
-        skyBoxMat.backFaceCulling = false;
-        skyBoxMat.reflectionTexture = new CubeTexture(
-            './assets/skyBox/galaxy/',
-            this.scene
-        );
-        skyBoxMat.reflectionTexture.coordinatesMode =
-            Texture.SKYBOX_MODE;
-        skyBoxMat.diffuseColor = new Color3(0, 0, 0);
-        skyBoxMat.specularColor = new Color3(0, 0, 0);
-        skyBox.material = skyBoxMat;
+        this._skyBox = SkyBox.Galaxy(this.scene);
     }
 
     addSun(): void {
-        const sun = MeshBuilder.CreateSphere(
-            'sun',
-            { segments: 12, diameter: 1.7 },
-            this.scene
-        );
-        const sunMat = new StandardMaterial('sunMat', this.scene);
-        sunMat.diffuseTexture = new Texture('./assets/textures/sun.jpg', this.scene);
-        sun.material = sunMat;
-        this.engine.runRenderLoop(() => {
-            sun.rotation.y += .005;
-        });
+        this._sun = Sun.New(this.scene, this.engine);
     }
 
     addMercury(): void {
-        const mercury = MeshBuilder.CreateSphere(
-            'mercury',
-            { segments: 12, diameter: .5 },
-            this.scene
-        );
-        const mercuryMat = new StandardMaterial('mercuryMat', this.scene);
-        mercuryMat.diffuseTexture = new Texture('./assets/textures/mercury.jpg', this.scene);
-        mercury.material = mercuryMat;
-        let num = 0;
-        this.engine.runRenderLoop(() => {
-            mercury.rotation.y -= .01;
-            mercury.position.x = Math.sin(num += .005) * 2;
-            mercury.position.z = Math.cos(num += .005) * 2;
-        });
+        this._mercury = Mercury.New(this.scene, this.engine);
     }
 
     addVenus(): void {
-        const venus = MeshBuilder.CreateSphere(
-            'venus',
-            { segments: 12, diameter: .6 },
-            this.scene
-        );
-        const venusMat = new StandardMaterial('venusMat', this.scene);
-        venusMat.diffuseTexture = new Texture('./assets/textures/venus.jpg', this.scene);
-        venus.material = venusMat;
-        let num = 0;
-        this.engine.runRenderLoop(() => {
-            venus.rotation.y -= .01;
-            venus.position.x = Math.sin(num += .007) * 3;
-            venus.position.z = Math.cos(num += .007) * 3;
-        });
+        this._venus = Venus.New(this.scene, this.engine);
     }
 
     addEarth(): void {
-        const earth = MeshBuilder.CreateSphere(
-            'earth',
-            { segments: 12, diameter: .7 },
-            this.scene
-        );
-        const earthMat = new StandardMaterial('earthMat', this.scene);
-        earthMat.diffuseTexture = new Texture('./assets/textures/earth.jpg', this.scene);
-        earth.material = earthMat;
-        earth.rotation.z = Tools.ToRadians(180);
-
-        let num = 0;
-        this.engine.runRenderLoop(() => {
-            earth.rotation.y -= .01;
-            earth.position.z = Math.cos(num += .008) * 4;
-            earth.position.x = Math.sin(num += .008) * 4;
-        });
+        this._earth = Earth.New(this.scene, this.engine);
     }
 }
