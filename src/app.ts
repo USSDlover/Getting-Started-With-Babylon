@@ -8,6 +8,7 @@
 // import {HitBox} from './scenes/getting-started/chapter-four/hit-box';
 // import {LandAndCubeScene} from './scenes/trial/landAndCube.scene';
 
-import {SolarScene} from './scenes/solar/solar.scene';
+// import {SolarScene} from './scenes/solar/solar.scene';
+import {ParticleTest} from './scenes/trial/particle';
 
-const app = new SolarScene();
+const app = new ParticleTest();
