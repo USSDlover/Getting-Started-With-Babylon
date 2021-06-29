@@ -1,7 +1,7 @@
 import {Engine, Mesh, MeshBuilder, Scene, StandardMaterial, Texture} from '@babylonjs/core';
 
 export class Venus {
-    static New(scene: Scene, engine: Engine): Mesh {
+    static New(scene: Scene, engine: Engine, distanceFromCore: number): Mesh {
         const venus = MeshBuilder.CreateSphere(
             'venus',
             { segments: 12, diameter: .6 },
@@ -13,8 +13,8 @@ export class Venus {
         let num = 0;
         engine.runRenderLoop(() => {
             venus.rotation.y -= .01;
-            venus.position.x = Math.sin(num += .007) * 3;
-            venus.position.z = Math.cos(num += .007) * 3;
+            venus.position.x = Math.sin(num += .007) * distanceFromCore;
+            venus.position.z = Math.cos(num += .007) * distanceFromCore;
         });
 
         return venus;

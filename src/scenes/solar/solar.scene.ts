@@ -1,5 +1,5 @@
 import {BasicSceneBase} from '../../base/basic-scene.base';
-import {Mesh, Sound, Vector3} from '@babylonjs/core';
+import {Color3, Mesh, Sound, Vector3} from '@babylonjs/core';
 import '@babylonjs/inspector';
 
 import {Sun} from './sun';
@@ -18,15 +18,16 @@ export class SolarScene extends BasicSceneBase {
     constructor() {
         super();
 
-        // this.showDebugger();
+        this.showDebugger();
 
         this.setCameraState();
         this.addSkyBox();
+        this.setLightPower();
 
         this.addSun();
-        // this.addMercury();
-        // this.addVenus();
-        // this.addEarth();
+        this.addMercury();
+        this.addVenus();
+        this.addEarth();
         // this.playSound();
 
     }
@@ -35,10 +36,14 @@ export class SolarScene extends BasicSceneBase {
         this.scene.debugLayer.show().then(() => {});
     }
 
+    setLightPower(): void {
+        this.light.diffuse = Color3.White();
+    }
+
     setCameraState(): void {
-        this.camera.position = new Vector3(600, 2, 0);
+        this.camera.position = new Vector3(20, 2, 0);
         this.camera.target = Vector3.Zero();
-        this.camera.wheelPrecision = 100;
+        this.camera.wheelPrecision = 300;
 
         this.camera.useAutoRotationBehavior = true;
     }
@@ -65,14 +70,14 @@ export class SolarScene extends BasicSceneBase {
     }
 
     addMercury(): void {
-        this._mercury = Mercury.New(this.scene, this.engine);
+        this._mercury = Mercury.New(this.scene, this.engine, 4);
     }
 
     addVenus(): void {
-        this._venus = Venus.New(this.scene, this.engine);
+        this._venus = Venus.New(this.scene, this.engine, 8);
     }
 
     addEarth(): void {
-        this._earth = Earth.New(this.scene, this.engine);
+        this._earth = Earth.New(this.scene, this.engine, 6);
     }
 }
