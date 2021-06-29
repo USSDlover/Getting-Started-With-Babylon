@@ -7,8 +7,8 @@
 // import {DudeWalkingInTheVillage} from './getting-started/chapter-three/dude-walking-in-the-village';
 // import {HitBox} from './scenes/getting-started/chapter-four/hit-box';
 // import {LandAndCubeScene} from './scenes/trial/landAndCube.scene';
+// import {ParticleTest} from './scenes/trial/particle';
 
-// import {SolarScene} from './scenes/solar/solar.scene';
-import {ParticleTest} from './scenes/trial/particle';
+import {SolarScene} from './scenes/solar/solar.scene';
 
-const app = new ParticleTest();
+const app = new SolarScene();
