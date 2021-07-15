@@ -1,5 +1,5 @@
 import {BasicSceneBase} from '../../base/basic-scene.base';
-import {Color3, Mesh, Sound, Vector3} from '@babylonjs/core';
+import {Color3, FlyCamera, FlyCameraInputsManager, FlyCameraKeyboardInput, Mesh, Sound, Vector3} from '@babylonjs/core';
 import '@babylonjs/inspector';
 
 import {Sun} from './sun';
@@ -18,7 +18,10 @@ export class SolarScene extends BasicSceneBase {
     constructor() {
         super();
 
-        this.showDebugger();
+        // this.showDebugger();
+
+        // this.removeOldCamera();
+        this.setFlyCamera();
 
         this.setCameraState();
         this.addSkyBox();
@@ -38,6 +41,24 @@ export class SolarScene extends BasicSceneBase {
 
     setLightPower(): void {
         this.light.diffuse = Color3.White();
+    }
+
+    setFlyCamera(): void {
+        const flyCamera = new FlyCamera('flyCamera', new Vector3(20, 2, 0), this.scene);
+        flyCamera.attachControl();
+        flyCamera.target = Vector3.Zero();
+        flyCamera.speed = .1;
+
+        flyCamera.applyGravity = false;
+        // this._flyCamera
+        // this._flyCamera.inputs = new FlyCameraInputsManager(this._flyCamera);
+        flyCamera.inputs.addKeyboard();
+
+        this.scene.activeCamera = flyCamera;
+    }
+
+    removeOldCamera(): void {
+        this.scene.removeCamera(this.camera);
     }
 
     setCameraState(): void {
