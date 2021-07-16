@@ -1,5 +1,5 @@
 import {BasicSceneBase} from '../../base/basic-scene.base';
-import {Color3, FlyCamera, FlyCameraInputsManager, FlyCameraKeyboardInput, Mesh, Sound, Vector3} from '@babylonjs/core';
+import {Color3, FlyCamera, Mesh, Sound, Vector3} from '@babylonjs/core';
 import '@babylonjs/inspector';
 
 import {Sun} from './sun';
@@ -14,6 +14,7 @@ export class SolarScene extends BasicSceneBase {
     private _mercury: Mesh;
     private _venus: Mesh;
     private _earth: Mesh;
+    private _pointerLocked: boolean;
 
     constructor() {
         super();
@@ -23,7 +24,7 @@ export class SolarScene extends BasicSceneBase {
         // this.removeOldCamera();
         this.setFlyCamera();
 
-        this.setCameraState();
+        // this.setCameraState();
         this.addSkyBox();
         this.setLightPower();
 
@@ -33,10 +34,13 @@ export class SolarScene extends BasicSceneBase {
         this.addEarth();
         // this.playSound();
 
+        this.requestPointerLock();
+        this.listenToPointerLockChangeOnDocument();
     }
 
     showDebugger(): void {
-        this.scene.debugLayer.show().then(() => {});
+        this.scene.debugLayer.show().then(() => {
+        });
     }
 
     setLightPower(): void {
@@ -55,6 +59,33 @@ export class SolarScene extends BasicSceneBase {
         flyCamera.inputs.addKeyboard();
 
         this.scene.activeCamera = flyCamera;
+    }
+
+    requestPointerLock(): void {
+        this.scene.onPointerDown = (event) => {
+            if (!this._pointerLocked) {
+                this.canvas.requestPointerLock = this.canvas.requestPointerLock || this.canvas.msRequestPointerLock
+                    || this.canvas.mozRequestPointerLock || this.canvas.webkitRequestPointerLock;
+                if (this.canvas.requestPointerLock) {
+                    this.canvas.requestPointerLock();
+                }
+            }
+        };
+    }
+
+    onPointerLockChange(): void {
+        // If the user is already locked
+        this._pointerLocked = (document as any).mozPointerLockElement ||
+            (document as any).webkitPointerLockElement ||
+            (document as any).msPointerLockElement ||
+            document.pointerLockElement || null;
+    }
+
+    listenToPointerLockChangeOnDocument(): void {
+        document.addEventListener('pointerlockchange', this.onPointerLockChange, false);
+        document.addEventListener('mspointerlockchange', this.onPointerLockChange, false);
+        document.addEventListener('mozpointerlockchange', this.onPointerLockChange, false);
+        document.addEventListener('webkitpointerlockchange', this.onPointerLockChange, false);
     }
 
     removeOldCamera(): void {
