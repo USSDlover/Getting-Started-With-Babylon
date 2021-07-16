@@ -1,6 +1,7 @@
 import {BasicSceneBase} from '../../base/basic-scene.base';
-import {Color3, FlyCamera, Mesh, Sound, Vector3} from '@babylonjs/core';
+import {Color3, FlyCamera, FollowCamera, Mesh, SceneLoader, Sound, Tools, Vector3} from '@babylonjs/core';
 import '@babylonjs/inspector';
+import '@babylonjs/loaders/glTF';
 
 import {Sun} from './sun';
 import {SkyBox} from './sky-box';
@@ -15,6 +16,9 @@ export class SolarScene extends BasicSceneBase {
     private _venus: Mesh;
     private _earth: Mesh;
     private _pointerLocked: boolean;
+    private _airo: Mesh;
+    private _flyCamera: FlyCamera;
+    private _followCamera: FollowCamera;
 
     constructor() {
         super();
@@ -36,10 +40,34 @@ export class SolarScene extends BasicSceneBase {
 
         this.requestPointerLock();
         this.listenToPointerLockChangeOnDocument();
+
+        this.loadAiro();
     }
 
     showDebugger(): void {
         this.scene.debugLayer.show().then(() => {
+        });
+    }
+
+    async loadAiro(): Promise<void> {
+        const res = await SceneLoader
+            .ImportMeshAsync('', './assets/models/', 'Airo.glb', this.scene)
+            .catch(reason => {
+                console.log('Error reason', reason);
+            });
+        this._airo = (res as any).meshes[0];
+        this.playWithSpaceShip();
+    }
+
+    playWithSpaceShip(): void {
+        let pos = 2;
+        this.engine.runRenderLoop(() => {
+            this._airo.lookAt(Vector3.Zero());
+            const scale = .2;
+            this._airo.scaling = new Vector3(scale, scale, scale);
+            this._airo.rotation.z = 180;
+            this._airo.position.x = Math.sin(pos += .008) * 10;
+            this._airo.position.z = Math.cos(pos += .008) * 10;
         });
     }
 
@@ -48,17 +76,17 @@ export class SolarScene extends BasicSceneBase {
     }
 
     setFlyCamera(): void {
-        const flyCamera = new FlyCamera('flyCamera', new Vector3(20, 2, 0), this.scene);
-        flyCamera.attachControl();
-        flyCamera.target = Vector3.Zero();
-        flyCamera.speed = .1;
+        this._flyCamera = new FlyCamera('flyCamera', new Vector3(20, 2, 0), this.scene);
+        this._flyCamera.attachControl();
+        this._flyCamera.target = Vector3.Zero();
+        this._flyCamera.speed = .1;
 
-        flyCamera.applyGravity = false;
+        this._flyCamera.applyGravity = false;
         // this._flyCamera
         // this._flyCamera.inputs = new FlyCameraInputsManager(this._flyCamera);
-        flyCamera.inputs.addKeyboard();
+        this._flyCamera.inputs.addKeyboard();
 
-        this.scene.activeCamera = flyCamera;
+        this.scene.activeCamera = this._flyCamera;
     }
 
     requestPointerLock(): void {
