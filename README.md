@@ -34,3 +34,7 @@ As I created this repo when I just started to look into BabylonJS and learn from
 
 There is `getting-started` folder available under `scenes` folder, that is my own practice on following
 documents.
+
+##### Useful Playgrounds
+
+- [Move](https://www.babylonjs-playground.com/#52LP1L#34)
