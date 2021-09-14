@@ -53,22 +53,22 @@ export class SolarScene extends BasicSceneBase {
         const res = await SceneLoader
             .ImportMeshAsync('', './assets/models/', 'Airo.glb', this.scene)
             .catch(reason => {
-                console.log('Error reason', reason);
+                console.log('Error on load Airo, this is the reason:', reason);
             });
         this._airo = (res as any).meshes[0];
         this.playWithSpaceShip();
     }
 
     playWithSpaceShip(): void {
-        let pos = 2;
-        this.engine.runRenderLoop(() => {
-            this._airo.lookAt(Vector3.Zero());
-            const scale = .2;
-            this._airo.scaling = new Vector3(scale, scale, scale);
-            this._airo.rotation.z = 180;
-            this._airo.position.x = Math.sin(pos += .008) * 10;
-            this._airo.position.z = Math.cos(pos += .008) * 10;
-        });
+        // let pos = 2;
+        // this.engine.runRenderLoop(() => {
+        //     this._airo.lookAt(Vector3.Zero());
+        //     const scale = .2;
+        //     this._airo.scaling = new Vector3(scale, scale, scale);
+        //     this._airo.rotation.z = 180;
+        //     this._airo.position.x = Math.sin(pos += .008) * 10;
+        //     this._airo.position.z = Math.cos(pos += .008) * 10;
+        // });
     }
 
     setLightPower(): void {
